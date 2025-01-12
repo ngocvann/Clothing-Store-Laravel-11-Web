@@ -24,7 +24,8 @@ Route::put('/cart/decrease-quantity/{rowId}',[CartController::class,'decrease_ca
 Route::delete('/cart/remove/{rowId}',[CartController::class,'remove_item'])->name('cart.item.remove');
 Route::delete('/cart/clear',[CartController::class,'empty_cart'])->name('cart.empty');
 
-Route::post('/wishlist',[CartController::class,'add_to_wishlist'])->name('wishlist.add');
+Route::post('/wishlist/add', [WishlistController::class, 'add_to_wishlist'])->name('wishlist.add');
+Route::get('/wishlist', [WishlistController::class,'index'])->name('wishlist.index');
 
 Route::middleware(['auth'])->group(function() {
     Route::get('/account-dashboard', [UserController::class, 'index'])->name('user.index');
@@ -53,5 +54,4 @@ Route::middleware(['auth', AuthAdmin::class])->group(function() {
     Route::put('/admin/product/update', [AdminController::class, 'product_update'])->name('admin.product.update');
     Route::delete('/admin/product/{id}/delete', [AdminController::class, 'product_delete'])->name('admin.product.delete');
 
-    Route::post('/wishlist', [WishlistController::class, 'add_to_wishlist'])->name('wishlist.add');
 });
