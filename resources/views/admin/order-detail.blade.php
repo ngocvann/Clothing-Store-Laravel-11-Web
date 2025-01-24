@@ -19,7 +19,7 @@
                         <i class="icon-chevron-right"></i>
                     </li>
                     <li>
-                        <div class="text-tiny">Order Items</div>
+                        <div class="text-tiny">Order Details</div>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,6 @@
                 </div>
             </div>
 
-
             <div class="wg-box mt-5">
                 <div class="flex items-center justify-between gap10 flex-wrap">
                     <div class="wg-filter flex-grow">
@@ -105,7 +104,6 @@
                 </table>
                 </div>
             </div>
-
 
             <div class="wg-box mt-5">
                 <h5>Shipping Address</h5>
