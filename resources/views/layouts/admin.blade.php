@@ -147,7 +147,12 @@
                                         <div class="text">Coupons</div>
                                     </a>
                                 </li>
-
+                                <li class="menu-item">
+                                    <a href="{{route('admin.contacts')}}" class="">
+                                        <div class="icon"><i class="icon-mail"></i></div>
+                                        <div class="text">Messages</div>
+                                    </a>
+                                </li>
                                 <li class="menu-item">
                                     <a href="users.html" class="">
                                         <div class="icon"><i class="icon-user"></i></div>
@@ -477,7 +482,7 @@
     <script src="{{ asset('js/sweetalert.min.js') }}"></script>
     <script src="{{ asset('js/apexcharts/apexcharts.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    
+
     @stack('scripts')
 </body>
 
